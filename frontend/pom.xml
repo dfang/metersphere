@@ -37,6 +37,8 @@
             <configuration>
               <nodeVersion>v16.10.0</nodeVersion>
               <npmVersion>6.14.15</npmVersion>
+              <nodeDownloadRoot>https://registry.npmmirror.com/-/binary/node/</nodeDownloadRoot>
+              <npmDownloadRoot>http://registry.npmjs.org/npm/-/</npmDownloadRoot>
             </configuration>
           </execution>
           <!-- Install all project dependencies -->
@@ -51,6 +53,7 @@
               you can remove this whole <configuration> section.
               -->
               <arguments>install</arguments>
+              <npmRegistryURL>https://registry.npmmirror.com/</npmRegistryURL>
             </configuration>
           </execution>
           <!-- Build and minify static files -->
